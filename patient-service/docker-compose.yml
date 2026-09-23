@@ -13,6 +13,14 @@ services:
     depends_on:
       - db
 
+  billing-service:
+    build:
+      context: ../billing-service
+      dockerfile: Dockerfile
+    ports:
+      - "4001:4001"
+      - "9001:9001"
+
   db:
     image: postgres:17
     restart: always
