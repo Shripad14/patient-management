@@ -78,15 +78,89 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-h2console</artifactId>
         </dependency>
+
+        <!-- ================================================== -->
+        <!-- gRPC SERVER -->
+        <!-- ================================================== -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-grpc-server</artifactId>
+        </dependency>
+
+
+        <!-- ================================================== -->
+        <!-- gRPC CLIENT -->
+        <!-- Uncomment this if Billing Service calls another
+             service through gRPC -->
+        <!-- ================================================== -->
+
+        <!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-grpc-client</artifactId>
+        </dependency>
+        -->
+
+
+        <!-- ================================================== -->
+        <!-- gRPC / Protobuf -->
+        <!-- Versions are managed by Spring Boot -->
+        <!-- ================================================== -->
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+        </dependency>
+
+
+        <!-- ================================================== -->
+        <!-- Optional:
+             Only add this if you specifically need Netty Shaded.
+             Spring Boot's gRPC server starter already provides
+             the normal gRPC transport. -->
+        <!-- ================================================== -->
+
+        <!--
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+        </dependency>
+        -->
+
     </dependencies>
 
     <build>
+
         <plugins>
+
+            <!-- ================================================== -->
+            <!-- Spring Boot -->
+            <!-- ================================================== -->
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+
+            <!-- ================================================== -->
+            <!-- Protobuf + gRPC Code Generation -->
+            <!-- ================================================== -->
+
+            <plugin>
+                <groupId>io.github.ascopes</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+            </plugin>
+
         </plugins>
+
     </build>
+
 
 </project>
