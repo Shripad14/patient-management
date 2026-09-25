@@ -47,7 +47,7 @@ service BillingService{
   // 'rpc' means Remote Procedure Call.
   //
   // This defines a method that another service can call
-  // remotely.
+    // remotely.
   //
   // CreateBilling = name of the RPC method.
   //
@@ -61,7 +61,8 @@ service BillingService{
   //
   // But this method is called over the network using gRPC.
 
-  rpc CreateBillingService (BillingRequest) returns (BillingResponse);
+  rpc CreateBillingService (BillingRequest)
+      returns (BillingResponse);
 }
 
 // ============================================================
