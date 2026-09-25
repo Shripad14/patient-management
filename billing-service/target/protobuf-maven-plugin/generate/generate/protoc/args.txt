@@ -1,0 +1,9 @@
+--java_out=E:\Projects\patient-management\billing-service\target\generated-sources\protobuf
+--plugin=protoc-gen-0_375d1471d3eed26d81221dca425e87c88261d284=E:\Projects\patient-management\billing-service\target\protobuf-maven-plugin\generate\generate\artifacts\protoc-gen-grpc-java-1ecf7912d7f3b60b609adc1070a21457e5fa3d4c.exe
+--0_375d1471d3eed26d81221dca425e87c88261d284_out=E:\Projects\patient-management\billing-service\target\generated-sources\protobuf
+--0_375d1471d3eed26d81221dca425e87c88261d284_opt=@generated=omit
+E:\Projects\patient-management\billing-service\src\main\proto\billing_service.proto
+--proto_path=E:\Projects\patient-management\billing-service\src\main\proto
+--proto_path=E:\Projects\patient-management\billing-service\target\protobuf-maven-plugin\generate\generate\archives\grpc-services-1.83.1-01325012a102e0d6155273dabfd616d0f0a1b635
+--proto_path=E:\Projects\patient-management\billing-service\target\protobuf-maven-plugin\generate\generate\archives\protobuf-java-3.25.9-fbba14397f057daef7b51176add7d0097252f05b
+--proto_path=E:\Projects\patient-management\billing-service\target\protobuf-maven-plugin\generate\generate\archives\proto-google-common-protos-2.64.1-ee80af1a8356487692ff6bd9938d8a7d2aa61124
